@@ -1,0 +1,52 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: rgb(31, 30, 30);
+    color: rgb(230, 225, 225);
+    align-items: center;
+}
+
+.btn-menu{
+    background-color: rgb(230, 225, 225);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    display: none; /* oculta un elemento, en este caso, el boton */
+}
+
+.btn-menu .bi{
+    font-size: 20px;
+}
+
+nav{
+    display: flex;
+    gap: 7vw; /* vw es el ancho de la pantalla */
+}
+nav a{
+    text-decoration: none;
+    color:rgb(230, 225, 225);
+}
+
+@media screen and (max-width: 800px){ /* para achicar pantalla y agregar propiedades, como borrar los iconos y agregar cosas */
+    body{
+        background-color: blue;
+    }
+
+    nav{
+        display: none;
+    }
+    .btn-menu{
+        display: block;
+    }
+}
